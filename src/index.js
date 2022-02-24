@@ -16,8 +16,7 @@ app.use(async ctx => {
     const { method } = ctx.request.query;
 
     ctx.response.set({
-        // 'Access-Control-Allow-Origin': 'http://localhost:8888',
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': 'https://alexgnutov.github.io',
         'Access-Control-Allow-Headers': 'Content-Type',
     });
 
