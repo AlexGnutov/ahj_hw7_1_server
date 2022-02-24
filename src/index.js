@@ -9,6 +9,7 @@ app.use(koaBody({
     urlencoded: true,
 }));
 
+const PORT = process.env.PORT || 8000;
 
 app.use(async ctx => {
 
@@ -58,4 +59,4 @@ app.use(async ctx => {
     }
 });
 
-app.listen(8000);
+app.listen(PORT);
